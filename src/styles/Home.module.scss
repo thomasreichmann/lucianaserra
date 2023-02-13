@@ -1,0 +1,56 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem;
+	min-height: 100vh;
+}
+
+.backgroundWrapper {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.backgroundImage {
+	position: fixed !important;
+	object-fit: cover;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	margin-top: 25px;
+	justify-content: center;
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.nav {
+			display: flex;
+		}
+	}
+}
+
+.logo {
+	margin-bottom: 25px;
+}
+
+.nav a {
+	all: unset;
+
+	margin: 0 25px;
+	color: #fff;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:active {
+		cursor: progress;
+	}
+}
